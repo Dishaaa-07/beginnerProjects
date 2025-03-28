@@ -20,7 +20,5 @@ while attempts>0:
         print('\nCongratulations!! You guessed the word: '+ word)
         break
     else:
-        print('\nYou have run out of attempts! The word was: '+ word[:1])
-        
-    
+        print('\nYou have run out of attempts! The word was: '+ word[:1])
     
