@@ -1,1 +1,17 @@
-This file was removed in branch delete/AIproject_custom-made_searchEngine on 2025-12-30 by Dishaaa-07.
+from exa_py import Exa
+
+exa = Exa('YOUR KEY HERE')
+# To keep my API key private, I'm using a placeholder above. Replace with your own key.
+query = input('Search here: ')
+
+response = exa.search(
+  query,
+  num_results=5,
+  type='keyword',
+  include_domains=['https://www.youtube.com'],
+)
+
+for result in response.results:
+  print(f'Title: {result.title}')
+  print(f'URL: {result.url}')
+  print()
